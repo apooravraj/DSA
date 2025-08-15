@@ -1,7 +1,6 @@
 class Solution {
 public:
     bool isPowerOfFour(int n) {
-        return n>0 && n==(n&-n) && (n-1)%3==0;
-        
+        return n>0 && n==bit_ceil((unsigned)n) && (countl_zero((unsigned)n)&1);
     }
 };
