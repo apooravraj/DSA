@@ -1,0 +1,5 @@
+class Solution(object):
+    def separateDigits(self, nums):
+      #class Solution:
+    #def separateDigits(self, nums: List[int]) -> List[int]:
+        return [ ord(c)-ord('0')  for x in nums for c in str(x)] 
