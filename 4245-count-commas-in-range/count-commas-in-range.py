@@ -4,6 +4,6 @@ class Solution:
 
         for i in range(1, n + 1):
             if i >= 1000:
-                count += 1
+                count = count + 1
 
         return count
