@@ -14,4 +14,5 @@ class Solution:
             if s == k:
                 best = max(best, j - i + 1)
 
-        return -1 if best < 0 else len(A) - best
+        return -1 if best < 0 else len(A) - best 
+        
