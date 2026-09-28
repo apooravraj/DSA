@@ -4,7 +4,7 @@ class Solution:
         max_depth = 0
         for c in s:
             if c == '(':
-                depth += 1
+                depth = depth + 1
                 if depth > max_depth:
                     max_depth = depth
             elif c == ')':
