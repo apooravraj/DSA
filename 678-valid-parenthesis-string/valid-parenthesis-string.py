@@ -5,16 +5,16 @@ class Solution:
 
         for ch in s:
             if ch == '(':
-                low += 1
-                high += 1
+                low = low + 1
+                high = high + 1
             elif ch == ')':
                 if low > 0:
                     low -= 1
                 high -= 1
             else:
                 if low > 0:
-                    low -= 1
-                high += 1
+                    low = low - 1
+                high = high + 1
 
             if high < 0:
                 return False
